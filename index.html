@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/560ee47dda.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body">
     <nav class="navbar">
         <li onclick="hamburger();" class="hamburger">&nbsp;&#9776;</li>
         <ul class="navbar-link" id="navbar-link">
             <li>Home</li>
             <li>Contact</li>
             <li>News</li>
+            <li onclick="darkMode();" class="dark-mode">Dark Mode<span class="darkModeStatus" id="darkModeStatus" >&nbsp - On</span></li>
+            <div onclick="darkMode();" class="dark-mode-switch">
+                <div class="dark-mode-switch-circle-on" id="dark-mode-switch-circle"></div>
+            </div>
         </ul>
     </nav>
     <div class="textAndImage">
@@ -24,7 +28,7 @@
         </div>
         <image class="retro" src="retro.gif"></image>
     </div>
-    <div class="learnMore">
+    <div class="learnMore" id="learnMore">
         <h1>Free Sample</h1>
         <button>Learn More</button>
     </div>
