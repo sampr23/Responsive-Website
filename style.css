@@ -150,6 +150,7 @@ button {
 }
 
 
+/* Mobile Section */
 @media screen and (max-width: 1045px) {
     .hamburger {
         display: flex;
